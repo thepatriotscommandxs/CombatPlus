@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "complus:diamond/mace"
+			}
+		}
+	},
+	"rewards": {
+		"function": "complus:recipe/diamond/mace"
+	}
+}

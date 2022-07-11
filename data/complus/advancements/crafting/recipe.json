@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "complus:recipe"
+			}
+		}
+	},
+	"rewards": {
+		"function": "complus:recipe/recipe"
+	}
+}

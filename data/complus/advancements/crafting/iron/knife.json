@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "complus:iron/knife"
+			}
+		}
+	},
+	"rewards": {
+		"function": "complus:recipe/iron/knife"
+	}
+}

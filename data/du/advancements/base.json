@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "Fork of Datapack Utils",
+		"description": "v2.4.2",
+		"icon": {
+			"item": "minecraft:redstone"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "goal"
+    },
+    "parent": "global:thepatsfan",
+	"criteria": {
+        "always": {
+			"trigger": "minecraft:tick"
+		}
+    }
+}

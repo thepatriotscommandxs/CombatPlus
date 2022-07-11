@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "complus:netherite/arc_star"
+			}
+		}
+	},
+	"rewards": {
+		"function": "complus:recipe/netherite/arc_star"
+	}
+}

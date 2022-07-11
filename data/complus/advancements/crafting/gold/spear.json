@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "complus:gold/spear"
+			}
+		}
+	},
+	"rewards": {
+		"function": "complus:recipe/gold/spear"
+	}
+}

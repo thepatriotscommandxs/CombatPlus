@@ -1,12 +1,12 @@
 
 #bar
-execute store result score in_0 du_data run data get entity @s SelectedItem.tag.complus.base 10
-execute store result score in_1 du_data run data get entity @s SelectedItem.tag.complus.speed 1
-execute store result score in_2 du_data run data get entity @s SelectedItem.tag.complus.kb 1
-execute store result score in_3 du_data run data get entity @s SelectedItem.tag.Enchantments[{id:"minecraft:sharpness"}].lvl 10
+execute store result score @s basedamage run data get entity @s SelectedItem.tag.complus.base 10 
+execute store result score @s weaponspeed run data get entity @s SelectedItem.tag.complus.speed 1 
+execute store result score @s knockbackext run data get entity @s SelectedItem.tag.complus.kb 1 
+execute store result score @s sharpnessext run data get entity @s SelectedItem.tag.Enchantments[{id:"minecraft:sharpness"}].lvl 10 
 
 #speed
-scoreboard players operation @s complus_cooldown += in_1 du_data
+scoreboard players operation @s complus_cooldown += @s weaponspeed
 execute if score @s complus_cooldown matches ..0 run scoreboard players set @s complus_cooldown 0
 execute if score @s complus_cooldown matches 1500.. run scoreboard players set @s complus_cooldown 1500
 
@@ -30,5 +30,5 @@ execute if score @s complus_cooldown matches 100..199 run title @s title {"text"
 execute if score @s complus_cooldown matches 0..99 run title @s title {"text":"\uef10"}
 
 #attack damage
-execute if score $base.timer_10 du_data matches 5 run function complus:player/weapon_modify
-execute if score $base.timer_10 du_data matches 0 run function complus:player/weapon_modify
+execute if score @s tenticktimer matches 5 run function complus:player/weapon_modify
+execute if score @s tenticktimer matches 0 run function complus:player/weapon_modify

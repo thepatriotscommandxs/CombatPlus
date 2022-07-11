@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "complus:gold/hammer"
+			}
+		}
+	},
+	"rewards": {
+		"function": "complus:recipe/gold/hammer"
+	}
+}
